@@ -1,24 +1,211 @@
 *,
 *::after,
-*::before
-{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
-body{
-    font-family: 'Lato', sans-serif;
-    background-color: #999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    max-width: 1400px;
-    margin: 0 auto;
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	background-color: #999;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
+	width: 95%;
+	// overflow: hidden;
+	// background-color: darkgreen;
+}
+
+nav {
+	// background-color: aquamarine;
+	display: flex;
+	width: 100%;
+}
+
+.nav-items {
+	// background-color: cadetblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.burger-icon {
+	color: white;
+	background: none;
+    // background-color: aqua;
+	z-index: 20;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	// right: 10px;
+	// background-color: brown;
+	// margin-left: auto;
+	// background: none;
+	border: none;
+	font-size: 26px;
+	padding: 10px 20px;
+	// display: flex;
+	// justify-self: flex-end;
+}
+
+.nav-items a {
+	text-decoration: none;
+	margin: 40px 20px;
+	font-size: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: none;
+	color: rgb(172, 23, 43);
+	transition: 1s;
+}
+.nav-items a:hover {
+	color: royalblue;
+}
+span {
+	color: rgb(172, 23, 43);
+}
+header {
+	width: 100%;
+}
+.header-img {
+	position: relative;
+	background-image: url("../img/alberta-ge3ec5ba60_640.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 30vh;
+    z-index: 0;
+}
+.header-bg {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+}
+.header-text {
+	width: 100%;
+	height: 100%;
+	// background-color: aqua;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 10px;
+}
+.header-text h1,
+.header-text h2 {
+	// margin: 10px;
+	color: white;
+	padding: 15px 30px;
+}
+.first-product {
+	background-image: url("../img/butterfly-g5c9baa28b_1920.jpg");
+}
+
+.second-product {
+	background-image: url("../img/fox-g9df024d91_1920.jpg");
+}
+
+.third-product {
+	background-image: url("../img/gingerbread-cookies-gc488ad48e_1920.jpg");
+}
+
+.fourth-product {
+	background-image: url("../img/mountain-landscape-g885efc4bd_1920.jpg");
+}
+.products {
+	overflow: hidden;
+}
+section h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+section p{
+    font-size: 18px;
+    text-align: center;
+}
+.product {
+	margin: 20px 0;
+	position: relative;
+	height: 35vh;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: 1s;
+}
+.first-product-text {
+	position: absolute;
+	color: white;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    overflow: hidden;
+}
+.first-product-bg {
+	position: absolute;
+	// width: 100%;
+	// height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 35%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    overflow: hidden;
+}
+.about-us {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0;
+}
+.product:hover {
+	scale: 1.1;
+}
+
+@media (min-width: 992px) {
+	.nav-items a {
+		display: flex;
+	}
+	.burger-icon {
+		display: none;
+	}
+	.header-img {
+		background-image: url("../img/alberta-g982f85581_1920.jpg");
+	}
+	.header-text h1 {
+		font-size: 40px;
+	}
+	.header-text h2 {
+		font-size: 30px;
+	}
+}
+@media (min-width: 992px) {
+	.products {
+		// display: flex;
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 10px;
+	}
 }
