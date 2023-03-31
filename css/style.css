@@ -21,4 +21,53 @@ body {
   min-height: 100vh;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+img {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  z-index: -5;
+}
+
+.hero-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 600px;
+  height: 400px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.img-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+h2 {
+  position: absolute;
+  bottom: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: antiquewhite;
+  z-index: 10;
+  transition: 1s 1s;
+}
+
+.hero-img:hover {
+  transform: rotate(-360deg);
+}
+
+.hero-img:hover > h2 {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
