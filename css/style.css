@@ -22,7 +22,6 @@ body {
 }
 
 .wrapper {
-  position: relative;
   max-width: 1400px;
   margin: 0 auto;
   width: 95%;
@@ -31,6 +30,11 @@ body {
 nav {
   display: flex;
   width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #999;
 }
 
 .nav-items {
@@ -72,6 +76,7 @@ span {
 
 header {
   width: 100%;
+  position: relative;
 }
 
 .header-img {
@@ -123,11 +128,8 @@ header {
   background-image: url("../img/mountain-landscape-g885efc4bd_1920.jpg");
 }
 
-.products {
-  overflow: hidden;
-}
-
 section h2 {
+  transition: 0.7s;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -145,7 +147,6 @@ section p {
   background-position: center;
   border-radius: 20px;
   overflow: hidden;
-  transition: 1s;
 }
 
 .first-product-text {
@@ -163,7 +164,7 @@ section p {
 .first-product-bg {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
-  top: 35%;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -178,8 +179,8 @@ section p {
   padding: 40px 0;
 }
 
-.product:hover {
-  scale: 1.1;
+.product:hover h2 {
+  scale: 1.5;
 }
 
 @media (min-width: 992px) {
@@ -208,4 +209,30 @@ section p {
     grid-template-rows: 1fr 1fr;
     gap: 10px;
   }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact p {
+  color: white;
+  padding: 10px 40px;
+}
+.contact h2 {
+  font-size: 30px;
+}
+
+footer {
+  display: flex;
+  padding: 20px 0;
+  font-size: 24px;
+  background-color: #777;
+  width: 100%;
+  justify-content: center;
+}
+
+section {
+  scroll-margin-top: 250px;
 }/*# sourceMappingURL=style.css.map */
