@@ -24,3 +24,58 @@ body {
 	max-width: 1400px;
 	width: 95%;
 }
+.btn{
+	position: relative;
+	font-size: 40px;
+	padding: 10px 20px;
+	color: white;
+	background-color: royalblue;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 1;
+}
+.bar{
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	background-color: rgb(13, 40, 119);
+	transition: 0.5s;
+	z-index: -1;
+	// border: solid 1px;
+}
+.bar:nth-child(2){
+	left: 20%;
+}
+.bar:nth-child(3){
+	left: 40%;
+}
+.bar:nth-child(4){
+	left: 60%;
+}
+.bar:nth-child(5){
+	left: 80%;
+}
+.btn:hover{
+	.bar:nth-child(1){
+		bottom: 0;
+		transition-delay: .3s;
+	}
+	.bar:nth-child(2){
+		bottom: 0%;
+		transition-delay: .1s;
+	}
+	.bar:nth-child(3){
+		bottom: 0%;
+		transition-delay: .2s;
+	}
+	.bar:nth-child(4){
+		bottom: 0%;
+	}
+	.bar:nth-child(5){
+		bottom: 0%;
+		transition-delay: .5s;
+	}
+}
