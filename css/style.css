@@ -26,12 +26,90 @@ body {
   background-color: #999;
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-height: 100vh;
+  font-size: 2rem;
 }
 
 .wrapper {
   margin: 0 auto;
   max-width: 1400px;
   width: 95%;
+}
+
+nav {
+  width: 100%;
+}
+nav .navbar-brand {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+}
+nav .navbar-brand span {
+  color: #1d3fa5;
+}
+nav .navbar-nav a {
+  text-transform: uppercase;
+  color: #fff;
+}
+nav .nav-link:hover {
+  color: #4169e1;
+}
+nav .active {
+  color: red;
+}
+nav .navbar-toggler {
+  border: none;
+}
+nav .fa-bars {
+  padding: 12px;
+  font-size: 2.2rem;
+  color: #4169e1;
+}
+nav .fa-headset {
+  margin-right: 10px;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/playstation-gefa8f3af7_640.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -5;
+}
+@media (min-width: 992px) {
+  header .hero-img {
+    background-image: url("../img/playstation-g93c97f876_1920.jpg");
+  }
+}
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header .hero-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0px 15px;
+}
+header .hero-text h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+header .hero-text h1 span {
+  color: #1d3fa5;
+}
+header .hero-text p {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
