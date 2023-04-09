@@ -37,18 +37,18 @@ body {
 }
 
 .shadow-bg {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav {
   z-index: 5;
   width: 100%;
+  transition: 0.6s;
 }
 nav .navbar-brand {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
-  transition: 0.6s;
   color: #fff;
 }
 nav .navbar-brand span {
@@ -61,9 +61,6 @@ nav .navbar-nav a {
 nav .nav-link:hover {
   color: #4169e1;
 }
-nav .active {
-  color: red;
-}
 nav .navbar-toggler {
   border: none;
 }
@@ -74,6 +71,10 @@ nav .fa-bars {
 }
 nav .fa-headset {
   margin-right: 10px;
+}
+
+.active {
+  color: red;
 }
 
 header .fa-chevron-down {
@@ -107,7 +108,7 @@ header .hero-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 header .hero-text {
   position: absolute;
