@@ -28,13 +28,18 @@ body {
 	max-width: 1400px;
 	width: 95%;
 }
+.shadow-bg{
+	background-color: rgba(0, 0, 0, 0.5);
 
+}
 nav {
+	z-index: 5;
 	width: 100%;
 	.navbar-brand {
 		text-transform: uppercase;
 		font-weight: bold;
 		font-size: 24px;
+		transition: .6s;
 		color: $white-color;
 		span{
 			color: $blue-dark-color;
@@ -65,6 +70,20 @@ nav {
 }
 
 header {
+	.fa-chevron-down{
+		// z-index: 10;
+		color: $white-color;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translate(-50%);
+		font-size: 30px;
+		cursor: pointer;
+	}
+	.btn-outline-light{
+		text-transform: uppercase;
+		padding: 10px 20px;
+	}
 	.hero-img {
 		position: relative;
 		height: 100vh;
@@ -72,8 +91,9 @@ header {
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
-		z-index: -5;
+		z-index: 0;
 	}
+	
 	@media (min-width: 992px) {
 		.hero-img {
 			background-image: url("../img/playstation-g93c97f876_1920.jpg");
@@ -108,5 +128,10 @@ header {
 		p {
 			color: $white-color;
 		}
+	}
+}
+@media (min-width: 576px) {
+	header .hero-img h1{
+		font-size: 40px;
 	}
 }
