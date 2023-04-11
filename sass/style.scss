@@ -1,6 +1,6 @@
 @import "./colors";
 @import "./reset";
-@import "./carousel";
+// @import "./carousel";
 
 *,
 *::after,
@@ -149,9 +149,9 @@ section{
 		text-align: center;
 	}
 }
-.text-center:hover{
-	color: $main-color;
-}
+// .text-center:hover{
+// 	color: $main-color;
+// }
 .text-center{
 	transition: 0.7s;
 }
@@ -206,17 +206,73 @@ section{
 	height: 500px;
 	width: 100%;
 }
-.carousel{
-	width: 80%;
-	margin: 0 auto;
-	button{
-		color: red;
+
+
+.price-box{
+	span{
+		font-weight: bold;
 	}
-}
-.carousel-indicators{
 	button{
-		color: red;
+		padding: 10px 20px;
 	}
-	padding: 10px;
+	background-color: #fff;
+	box-shadow: 3px 3px 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	// padding: 20px 40px;
+	transition: 0.5s;
+	overflow: hidden;
 }
 
+.price-box:hover{
+	scale: 1.1;
+}
+.price-wrap{
+	background-color: aqua;
+	width: 100%;
+}
+.text-body-secondary{
+	background-color: aquamarine;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+
+	text-align: center;
+}
+.card-group{
+	gap: 5px;
+}
+.card-img-top{
+	height: 300px;
+	object-fit: cover;
+	object-position: center;
+
+}
+.team{
+	position: relative;
+	background-image: url('../img/office-space-gcf523e9cb_1920.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	z-index: -22;
+	.card:hover{
+		scale: 0.95;
+
+	}
+	h2{
+		color: #fff;
+		z-index: 10;
+	}
+	.card{
+		transition: 0.4s;
+		// z-index: 5;
+	}
+}
+.team-shadow{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: -10;
+}

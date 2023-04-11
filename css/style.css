@@ -1,4 +1,3 @@
-@import url();
 a {
   text-decoration: none;
 }
@@ -141,18 +140,14 @@ header .hero-text p {
     font-size: 40px;
   }
 }
-@media (min-width: 576px) {
-  html {
-    scroll-padding-top: 72.25px;
+@media (min-width: 992px) {
+  nav {
+    height: 72.25px;
   }
 }
 section h2 {
   text-transform: uppercase;
   text-align: center;
-}
-
-.text-center:hover {
-  color: #4169e1;
 }
 
 .text-center {
@@ -211,17 +206,74 @@ section h2 {
   padding: 20px 0;
 }
 
-.carousel {
-  width: 80%;
-  margin: 0 auto;
+.price-box {
+  background-color: #fff;
+  box-shadow: 3px 3px 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: 0.5s;
+  overflow: hidden;
 }
-.carousel button {
-  color: red;
+.price-box span {
+  font-weight: bold;
+}
+.price-box button {
+  padding: 10px 20px;
 }
 
-.carousel-indicators {
-  padding: 10px;
+.price-box:hover {
+  scale: 1.1;
 }
-.carousel-indicators button {
-  color: red;
+
+.price-wrap {
+  background-color: aqua;
+  width: 100%;
+}
+
+.text-body-secondary {
+  background-color: aquamarine;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.card-group {
+  gap: 5px;
+}
+
+.card-img-top {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.team {
+  position: relative;
+  background-image: url("../img/office-space-gcf523e9cb_1920.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: -22;
+}
+.team .card:hover {
+  scale: 0.95;
+}
+.team h2 {
+  color: #fff;
+  z-index: 10;
+}
+.team .card {
+  transition: 0.4s;
+}
+
+.team-shadow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -10;
 }/*# sourceMappingURL=style.css.map */
