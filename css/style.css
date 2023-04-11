@@ -8,7 +8,8 @@ button {
 }
 
 .bounce-top {
-  animation: bounce-top 0.9s both;
+  display: block;
+  animation: bounce-top 3s infinite both;
 }
 
 @keyframes bounce-top {
