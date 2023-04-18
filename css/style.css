@@ -16,16 +16,14 @@ button {
 }
 
 html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
+  position: relative;
   font-family: "Lato", sans-serif;
-  background-color: #ccc8c8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.6rem;
   min-height: 100vh;
 }
 
@@ -35,6 +33,105 @@ body {
   width: 95%;
 }
 
-.first {
-  background-color: rgb(39, 196, 78);
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+
+nav .fa-camera {
+  color: rgb(255, 102, 0);
+  margin-right: 10px;
+}
+nav .navbar-brand {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+nav .nav-link {
+  text-transform: uppercase;
+}
+nav .navbar-toggler-icon {
+  font-size: 2.2rem;
+}
+nav .navbar-toggler {
+  padding: 10px 20px;
+}
+
+.home {
+  position: relative;
+  height: 60rem;
+  background-image: url("../img/city-g1ed94bf93_1920.jpg");
+  background-size: cover;
+  z-index: 0;
+}
+.home .btn {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.home .welcome-text {
+  font-size: 2.2rem;
+}
+
+.aboutus .aboutus-box h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.aboutus .aboutus-box i {
+  font-size: 4rem;
+  margin: 15px;
+}
+.aboutus .accordion-button {
+  padding: 1em;
+  font-size: 1.8rem;
+}
+.aboutus .marker {
+  color: rgb(255, 102, 0);
+}
+
+.team {
+  background-color: rgb(248, 248, 248);
+}
+.team .marker {
+  color: rgb(255, 102, 0);
+}
+.team .card-img-top {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.team .card-title {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgb(248, 248, 248);
+  color: rgb(255, 102, 0);
+  box-shadow: 0px 0px 3px rgba(134, 87, 16, 0.8);
+}
+
+.contact .submit-form {
+  font-size: 2rem;
+}
+.contact i {
+  color: rgb(255, 102, 0);
+}
+
+[section] {
+  scroll-margin-top: 85px;
+}
+
+@media (min-width: 992px) {
+  [section] {
+    scroll-margin-top: 69.25px;
+  }
 }/*# sourceMappingURL=style.css.map */

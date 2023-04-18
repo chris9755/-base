@@ -1,48 +1,215 @@
 <!DOCTYPE html>
 <html lang="pl">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>Web</title>
-		<link
-			rel="preconnect"
-			href="https://fonts.googleapis.com" />
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-			rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/de204a278a.js" crossorigin="anonymous"></script>    
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-		<link
-			rel="stylesheet"
-			href="./css/style.css" />
-	</head>
-	<body>
-		<div class="container-xl">
-			<div class="row">
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 1</div>
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 2</div>
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 3</div>
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 4</div>
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 5</div>
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 6</div>
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 7</div>
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 8</div>
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 9</div>
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 10</div>
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 11</div>
-				<div class="col-md-4 col-sm-6 col-lg-3 col-xl-2 bg-info-subtle text-center text-uppercase p-3">kolumna 12</div>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Web</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/de204a278a.js" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-spy">
+	<nav id="#navbar-spy" class="navbar navbar-expand-lg bg-body-tertiary py-4 fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"><i class="fa-solid fa-camera"></i>MMX</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ms-auto">
+					<a class="nav-link active" href="#home">Home</a>
+					<a class="nav-link" href="#aboutus">o nas</a>
+					<a class="nav-link" href="#team">zespół</a>
+					<a class="nav-link" href="#contact">kontakt</a>
+				</div>
 			</div>
 		</div>
+	</nav>
+	<section id="home" class="home">
+		<div
+			class="container h-100 d-flex flex-column justify-content-center align-items-center text-center text-light">
+			<div class="hero-shadow"></div>
+			<p class="display-1">MMX</p>
+			<p class="welcome-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<a href="#aboutus" class="btn btn-outline-light">poznaj nas</a>
+		</div>
+	</section>
+	<main>
+		<section id="aboutus" class="aboutus">
+			<div class="container py-5 aboutus-boxes">
+				<div class="row text-center">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="aboutus-box m-3 p-4 p-lg-5 border text-dark">
+							<h3>Jakość</h3>
+							<i class="fa-solid fa-check"></i>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, a?</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="aboutus-box m-3 p-4 p-lg-5 border text-light bg-dark">
+							<h3>Klienci</h3>
+							<i class="fa-solid fa-people-group"></i>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, a?</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="aboutus-box m-3 p-4 p-lg-5 border text-dark">
+							<h3>Sprzęt</h3>
+							<i class="fa-solid fa-computer"></i>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, a?</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="aboutus-box m-3 p-4 p-lg-5 border text-light bg-dark">
+							<h3>Ceny</h3>
+							<i class="fa-solid fa-dollar-sign"></i>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, a?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container py-5">
+				<p class="display-3 mb-4 text-center text-uppercase marker">Czym się wyróżniamy?</p>
+				<div class="accordion py-5" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Najlepsz jakość produktu </button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show"
+							data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, repellendus totam!
+								At aliquam nesciunt enim?
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Świetne relacje z klientami
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rerum, natus ipsa nemo
+								repudiandae ratione?
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Zdobywcy wielu nagród
+							</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vel, magnam ex quas
+								labore accusantium!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="height: 200vh;"></div>
+		</section>
+		<section id="team" class="team py-5">
+			<div class="container py-5 text-center">
+				<p class="display-3 marker mb-0 text-uppercase">Zespół</p>
+				<p class="py-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis architecto sed enim quis blanditiis reiciendis asperiores praesentium adipisci ut natus.</p>
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+					<div class="col">
+					  <div class="card h-100">
+						<img src="./img/laptop-gda3189bc1_1920.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Prezes</h5>
+						  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="col">
+					  <div class="card h-100">
+						<img src="./img/people-ga97619c2e_1920.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Grafik</h5>
+						  <p class="card-text">This is a short card.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="col">
+					  <div class="card h-100">
+						<img src="./img/woman-gc31e381b3_1920.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">HR</h5>
+						  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="col">
+					  <div class="card h-100">
+						<img src="./img/woman-geb8817fcb_1920.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Marketing</h5>
+						  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+		</section>
+		<section id="contact" class="contact bg-dark text-light">
+			<div class="container py-5 text-center">
+				<p class="display-3 text-uppercase pb-lg-5">Kontakt</p>
+				<div class="row">
+					<div class="col-12 col-lg-6 my-5 m-lg-0">
+						<form>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control"
+								placeholder="Imię i nazwisko">
+							</div>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control"
+								placeholder="Email">
+							</div>
+							<div class="input-group mb-3">
+								<textarea name="" id="" cols="30" rows="6" class="form-control" placeholder="Treść wiadomości"></textarea>
+							</div>
+							<input type="submit" value="wyślij" class="btn btn-light py-2 px-4 submit-form">
+						</form>
+					</div>
+					<div class="col-lg-6 mt-4 m-lg-0 contact-info">
+						<h3>Adres</h3>
+						<p>MMX</p>
+						<p><i class="fa-solid me-3 fa-location-dot"></i>Poland City</p>
+						<p><i class="fa-solid me-3 fa-phone"></i>+48 123 456 789</p>
+						<p><i class="fa-solid me-3 fa-envelope"></i>kontakt@mail.pl</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="bg-dark text-light mb-0 border-top">
+		<div class="container text-center">
+			<p class="py-5">&copy;Hose 2023</p>
+		</div>
+	</footer>
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-	</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+	<script src="./js/main.js"></script>	
+</body>
+
 </html>
