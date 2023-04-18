@@ -40,7 +40,7 @@ body {
 	width: 100%;
 	left: 0;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.5);
 	z-index: -5;
 }
 nav{
@@ -67,8 +67,9 @@ nav{
 .home{
 	position: relative;
 	height: 60rem;
-	background-image: url('../img/city-g1ed94bf93_1920.jpg');
+	background-image: url('../img/dandelions-g90786fd49_1920.jpg');
 	background-size: cover;
+	background-position: center;
 	z-index: 0;
 	.btn{
 		padding: 10px 20px;
@@ -132,11 +133,14 @@ nav{
 		color: $orange-color;
 	}
 }
-[section]{
+[id]{
 	scroll-margin-top: 85px;
 }
 @media (min-width:992px){
-	[section]{
-		scroll-margin-top: 69.25px;
+	[id]{
+		scroll-margin-top: 68px;
 	}
+}
+.nav-link:hover{
+	text-shadow:2px 2px 2px red;
 }
