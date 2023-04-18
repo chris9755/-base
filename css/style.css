@@ -48,17 +48,20 @@ nav .fa-camera {
   margin-right: 10px;
 }
 nav .navbar-brand {
-  font-size: 2.2rem;
+  padding: 10px 20px;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 nav .nav-link {
   text-transform: uppercase;
+  font-size: 1.8rem;
+  text-align: center;
 }
 nav .navbar-toggler-icon {
   font-size: 2.2rem;
 }
 nav .navbar-toggler {
-  padding: 10px 20px;
+  padding: 8px 16px;
 }
 
 .home {
