@@ -64,6 +64,12 @@ nav{
 	.navbar-toggler{
 		padding: 8px 16px;
 	}
+	.nav-color{
+		background-color: red;
+		.container{
+			background-color: blue;
+		}
+	}
 	
 	
 }
@@ -146,4 +152,8 @@ nav{
 }
 .nav-link:hover{
 	text-shadow:2px 2px 2px red;
+}
+
+.bg-body-secondary{
+	background-color: aquamarine;
 }

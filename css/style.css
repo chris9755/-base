@@ -63,6 +63,12 @@ nav .navbar-toggler-icon {
 nav .navbar-toggler {
   padding: 8px 16px;
 }
+nav .nav-color {
+  background-color: red;
+}
+nav .nav-color .container {
+  background-color: blue;
+}
 
 .home {
   position: relative;
@@ -141,4 +147,8 @@ nav .navbar-toggler {
 }
 .nav-link:hover {
   text-shadow: 2px 2px 2px red;
+}
+
+.bg-body-secondary {
+  background-color: aquamarine;
 }/*# sourceMappingURL=style.css.map */
