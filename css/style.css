@@ -1,4 +1,3 @@
-@import url();
 a {
   text-decoration: none;
 }
@@ -125,6 +124,14 @@ nav .nav-color .container {
   font-size: 2.2rem;
   text-transform: uppercase;
   font-weight: bold;
+}
+.team .card-img-top:hover {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  filter: grayscale(6);
 }
 
 .accordion-button:not(.collapsed) {

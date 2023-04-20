@@ -1,6 +1,6 @@
 @import './colors';
 @import './reset';
-@import './variables';
+// @import './variables';
 
 
 
@@ -15,6 +15,7 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	
 }
 
 body {
@@ -93,6 +94,7 @@ nav{
 	.welcome-text{
 		font-size: 2.2rem;
 	}
+	
 
 	
 }
@@ -115,6 +117,7 @@ nav{
 	.marker{
 		color: $orange-color;
 	}
+	
 }
 .team{
 	background-color: rgb(248, 248, 248);
@@ -125,13 +128,22 @@ nav{
 		height: 300px;
 		object-fit: cover;
 		object-position: center;
+		// filter: sepia(1);
 
 	}
+	
 	.card-title{
 		font-size: 2.2rem;
 		text-transform: uppercase;
 		font-weight: bold;
 	}
+.card-img-top:hover{
+		height: 300px;
+		object-fit: cover;
+		object-position: center;
+		filter: grayscale(6);
+
+	}	
 }
 .accordion-button:not(.collapsed){
 	background-color: rgb(248, 248, 248);
@@ -193,6 +205,7 @@ nav{
 }
 
 .carousel-bs{
+
 	.carousel-control-next, .carousel-control-prev {
 		position: absolute;
 		top: 0;
