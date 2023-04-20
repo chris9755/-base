@@ -151,4 +151,25 @@ nav .nav-color .container {
 
 .bg-body-secondary {
   background-color: aquamarine;
+}
+
+.aboutus-box:hover {
+  scale: 1.05;
+}
+
+.aboutus-box {
+  transition: 0.35s;
+}
+
+.img-car {
+  max-height: 700px;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact .contact-icon {
+  font-size: 3rem;
+}
+.contact h3 {
+  font-size: 2.4rem;
 }/*# sourceMappingURL=style.css.map */
