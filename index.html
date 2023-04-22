@@ -16,7 +16,11 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-spy">
-	<nav id="#navbar-spy" class="navbar nav-color navbar-expand-lg bg-body-secondary py-4 fixed-top">
+	<div class="cookie-box">
+		<p>Nasza strona korzysta z ciasteczek...</p>
+		<button class="cookie-btn">Akceptuj</button>
+	</div>
+	<nav id="#navbar-spy" class="navbar nav-color navbar-expand-lg bg-body-secondary py-4 pe-3 fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#"><i class="fa-solid fa-palette"></i>JowsART</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -89,8 +93,11 @@
 							data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, repellendus totam!
-								At aliquam nesciunt enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, repudiandae?
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque error voluptatibus vero enim ad necessitatibus iure facilis ab reprehenderit. Assumenda ut eum eveniet earum magni quaerat nostrum corporis recusandae blanditiis.
+								At aliquam nesciunt enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+								repudiandae?
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque error voluptatibus vero
+								enim ad necessitatibus iure facilis ab reprehenderit. Assumenda ut eum eveniet earum
+								magni quaerat nostrum corporis recusandae blanditiis.
 							</div>
 						</div>
 					</div>
@@ -104,7 +111,8 @@
 						<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 							<div class="accordion-body">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rerum, natus ipsa nemo
-								repudiandae ratione? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, tenetur?
+								repudiandae ratione? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+								tenetur?
 							</div>
 						</div>
 					</div>
@@ -125,8 +133,8 @@
 				</div>
 			</div>
 		</section>
-		<section id="team" class="team py-5">
-			<div class="container py-5 text-center">
+		<section id="team" class="team py-5 mb-5">
+			<div class="container py-5 text-center mb-5">
 				<p class="display-3 marker mb-0 text-uppercase">Portfolio</p>
 				<p class="py-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis architecto sed enim quis
 					blanditiis reiciendis asperiores praesentium adipisci ut natus.</p>
@@ -172,45 +180,89 @@
 					</div>
 				</div>
 			</div>
+			<!-- <hr> -->
+			<p class="display-3 mb-1 text-center text-uppercase marker pt-5">galeria</p>
+
 			<div class="carousel-bs py-5">
 				<div class="container">
-					<div id="carouselExample" class="carousel slide">
-						<div class="carousel-inner">
-						  <div class="carousel-item active">
-							<img src="./img/houses-g92d4927a4_1920.jpg" class="d-block w-100 img-car" alt="...">
-						  </div>
-						  <div class="carousel-item">
-							<img src="./img/pagoda-g850353fdc_1920.jpg" class="d-block w-100 img-car" alt="...">
-						  </div>
-						  <div class="carousel-item">
-							<img src="./img/flower-g401deea32_1920.jpg" class="d-block w-100 img-car" alt="...">
-						  </div>
-						  <div class="carousel-item">
-							<img src="./img/leaves-g33a2060ab_1920.jpg" class="d-block w-100 img-car" alt="...">
-						  </div>
+					<div id="carouselExampleCaptions" class="carousel slide">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+								class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+								aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+								aria-label="Slide 4"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+								aria-label="Slide 4"></button>
+
 						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						  <span class="visually-hidden">Previous</span>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="./img/leaves-g33a2060ab_1920.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5 class="p-3">Pierwszy slajd</h5>
+									<p class="mb-5">Some representative placeholder content for the first slide.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="./img/leaves-g33a2060ab_1920.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5 class="p-3">Drugi slajd</h5>
+									<p class="mb-5">Some representative placeholder content for the second slide.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="./img/leaves-g33a2060ab_1920.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5 class="p-3">Trzeci slajd</h5>
+									<p class="mb-5">Some representative placeholder content for the third slide.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="./img/leaves-g33a2060ab_1920.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5 class="p-3">Czwarty slajd</h5>
+									<p class="mb-5">Some representative placeholder content for the third slide.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="./img/leaves-g33a2060ab_1920.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+									<h5 class="p-3">Piąty slajd</h5>
+									<p class="mb-5">Some representative placeholder content for the third slide.</p>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
 						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						  <span class="visually-hidden">Next</span>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
 						</button>
-					  </div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section id="contact" class="contact bg-dark text-light">
 			<div class="container py-5 text-center">
 				<p class="display-3 text-uppercase pb-lg-5">Kontakt</p>
-				<div class="row">										
+				<div class="row">
 					<div class="col-lg-12 mt-4 m-lg-0 contact-info text-center">
 						<!-- <h3 class="mb-5">JowsART</h3> -->
 						<ul class="row m-0 p-0">
-							<li class="col-md-4 p-md-4 p-3 p-lg-5"><a href="#"><i class="contact-icon py-4 fa-brands fa-square-facebook"></i></a></li>
-							<li class="col-md-4 p-md-4 p-3 p-lg-5"><a href="https://www.instagram.com/molaitei/"><i class="contact-icon py-4 fa-brands fa-instagram"></i></a></li>
-							<li class="col-md-4 p-md-4 p-3 p-lg-5"><a href="#"><i class="contact-icon py-4 fa-solid fa-envelope"></i></a></li>
+							<li class="col-md-4 p-md-4 p-3 p-lg-5"><a href="#"><i
+										class="contact-icon py-4 fa-brands fa-square-facebook"></i></a></li>
+							<li class="col-md-4 p-md-4 p-3 p-lg-5"><a href="https://www.instagram.com/molaitei/"><i
+										class="contact-icon py-4 fa-brands fa-instagram"></i></a></li>
+							<li class="col-md-4 p-md-4 p-3 p-lg-5"><a href="#"><i
+										class="contact-icon py-4 fa-solid fa-envelope"></i></a></li>
 						</ul>
 					</div>
 				</div>

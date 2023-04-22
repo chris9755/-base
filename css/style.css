@@ -73,6 +73,14 @@ nav .nav-color .container {
   background-color: blue;
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: rgb(255, 102, 0);
+}
+
+.active {
+  color: aquamarine;
+}
+
 .home {
   position: relative;
   height: 60rem;
@@ -119,6 +127,7 @@ nav .nav-color .container {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  transition: ease 0.3s;
 }
 .team .card-title {
   font-size: 2.2rem;
@@ -131,7 +140,7 @@ nav .nav-color .container {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  filter: grayscale(6);
+  filter: brightness(1.2);
 }
 
 .accordion-button:not(.collapsed) {
@@ -192,31 +201,32 @@ nav .nav-color .container {
   text-shadow: 0px 0px 20px rgba(156, 155, 152, 0.8);
 }
 
-.carousel-bs .carousel-control-next, .carousel-bs .carousel-control-prev {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15%;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  background: 0 0;
-  border: 0;
-  opacity: 0.85;
-  transition: opacity 0.15s ease;
-  font-size: 3rem;
-}
-.carousel-bs .carousel-control-next .carousel-control-next-icon, .carousel-bs .carousel-control-next .carousel-control-prev-icon, .carousel-bs .carousel-control-prev .carousel-control-next-icon, .carousel-bs .carousel-control-prev .carousel-control-prev-icon {
+.carousel-control-next-icon, .carousel-control-prev-icon {
   display: inline-block;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
+}
+
+.carousel-indicators [data-bs-target] {
+  flex: 0 1 auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.carousel-item {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  overflow: hidden;
+  height: 70vh;
+  max-height: 90vh;
+  width: 100%;
+  text-align: center;
 }
 
 @media (min-width: 768px) {

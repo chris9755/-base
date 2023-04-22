@@ -1,3 +1,4 @@
+// @import "./cookies";
 @import './colors';
 @import './reset';
 // @import './variables';
@@ -79,6 +80,12 @@ nav{
 	
 	
 }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(255,102,0);
+}
+.active{
+	color: aquamarine;
+}
 .home{
 	position: relative;
 	height: 60rem;
@@ -128,6 +135,7 @@ nav{
 		height: 300px;
 		object-fit: cover;
 		object-position: center;
+		transition: ease 0.3s;
 		// filter: sepia(1);
 
 	}
@@ -141,7 +149,7 @@ nav{
 		height: 300px;
 		object-fit: cover;
 		object-position: center;
-		filter: grayscale(6);
+		filter:brightness(1.2) ;
 
 	}	
 }
@@ -204,45 +212,35 @@ nav{
 
 }
 
-.carousel-bs{
 
-	.carousel-control-next, .carousel-control-prev {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		z-index: 1;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 15%;
-		padding: 0;
-		color: #fff;
-		text-align: center;
-		background: 0 0;
-		border: 0;
-		opacity: 0.85;
-		transition: opacity .15s ease;
-		font-size: 3rem;
-		.carousel-control-next-icon, .carousel-control-prev-icon {
-			display: inline-block;
-			width: 4rem;
-			height: 4rem;
-			background-repeat: no-repeat;
-			background-position: 50%;
-			background-size: 100% 100%;
-		}
-	}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
 }
 
 
 
+.carousel-indicators [data-bs-target] {
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+	border-radius: 50%;
+    
+}
+.carousel-item{
+	object-fit: cover;
+	object-position: bottom;
+	overflow: hidden;
+	height: 70vh;
+	max-height: 90vh;
+	width: 100%;
+	text-align: center;
 
-
-
-
-
-
-
+}
 
 
 
