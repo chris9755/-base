@@ -35,21 +35,41 @@ body {
 
 .hero-shadow {
   position: absolute;
-  top: -100%;
+  top: 0%;
   width: 100%;
-  left: 0;
+  left: -100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: -5;
   animation: shadow ease 2s forwards;
 }
 
+.hero-shadow::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-color: rgb(255, 102, 0);
+  bottom: 0;
+  left: 0;
+  height: 3px;
+}
+
+.hero-shadow::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-color: rgb(255, 102, 0);
+  top: 0;
+  left: 0;
+  height: 3px;
+}
+
 @keyframes shadow {
   from {
-    top: -100%;
+    left: -100%;
   }
   to {
-    top: 0%;
+    left: 0%;
   }
 }
 .myname {
@@ -76,6 +96,14 @@ body {
     color: rgb(255, 102, 0);
   }
 }
+.aboutus-box {
+  border: solid 1px rgb(255, 102, 0);
+}
+
+.border-orange {
+  border: solid 1px rgb(255, 102, 0);
+}
+
 nav .fa-camera {
   color: rgb(255, 102, 0);
   margin-right: 10px;
@@ -230,11 +258,12 @@ nav .nav-color .container {
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
   display: inline-block;
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
+  opacity: 1;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -252,6 +281,7 @@ nav .nav-color .container {
   width: 100%;
   text-align: center;
   border-radius: 15px;
+  border: solid 1px rgb(255, 102, 0);
 }
 
 @media (min-width: 768px) {
