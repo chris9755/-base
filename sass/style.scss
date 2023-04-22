@@ -39,13 +39,49 @@ body {
 
 .hero-shadow{
 	position: absolute;
-	top: 0;
+	top: -100%;
 	width: 100%;
 	left: 0;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.4);
 	z-index: -5;
+	animation:shadow ease 2s forwards;
 }
+@keyframes shadow{
+	from{
+		top: -100%;
+	}
+	to{
+		top: 0%;
+
+	}
+
+}
+.myname{
+	animation: myname 3s forwards;
+}
+
+@keyframes myname {
+	from{
+		font-size: 3rem;
+		// text-shadow: 0px 0px 40px rgb(248, 248, 248);
+		filter: blur(10px);
+		opacity: 0;
+
+
+	}
+	to{
+		font-size: 6rem;
+		// text-shadow: 0px 0px 0px rgb(248, 248, 248);
+		filter: blur(none);
+		opacity: 1;
+	
+	}
+	
+}
+
+
+
 nav{
 	.fa-camera{
 		color: $orange-color;

@@ -35,14 +35,39 @@ body {
 
 .hero-shadow {
   position: absolute;
-  top: 0;
+  top: -100%;
   width: 100%;
   left: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: -5;
+  animation: shadow ease 2s forwards;
 }
 
+@keyframes shadow {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+.myname {
+  animation: myname 3s forwards;
+}
+
+@keyframes myname {
+  from {
+    font-size: 3rem;
+    filter: blur(10px);
+    opacity: 0;
+  }
+  to {
+    font-size: 6rem;
+    filter: blur(none);
+    opacity: 1;
+  }
+}
 nav .fa-camera {
   color: rgb(255, 102, 0);
   margin-right: 10px;
