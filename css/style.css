@@ -23,34 +23,58 @@ html {
 body {
   font-family: "Lato", sans-serif;
   background-color: #999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   min-height: 100vh;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .grid-container {
-  max-width: 1900px;
-  width: 100vw;
-  height: 100vh;
+  margin: 20px 5px;
+  max-width: 1800px;
+  width: 100%;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(12, 1fr);
   gap: 10px;
-  background-color: darkgreen;
 }
 .grid-container .grid-item {
-  width: auto;
-  height: auto;
-  background-color: rgb(206, 132, 106);
+  width: 100%;
+  height: 35vh;
+  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: solid 2px black;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+  background-image: url("../img/pagoda-g850353fdc_1920.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.grid-container .grid-item:hover {
+  scale: 1.1;
 }
 
 @media (min-width: 576px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
