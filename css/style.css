@@ -25,13 +25,32 @@ body {
   background-color: #999;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 1400px;
-  width: 95%;
+.grid-container {
+  max-width: 1900px;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 10px;
+  background-color: darkgreen;
+}
+.grid-container .grid-item {
+  width: auto;
+  height: auto;
+  background-color: rgb(206, 132, 106);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
